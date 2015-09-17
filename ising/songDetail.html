@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>别找我麻烦</title>
+    <link rel="icon" href="public/images/is-sing.png" type="image/x-icon"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="Resource-type" content="Document"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="public/stylesheets/video.css"/>
+    <link rel="stylesheet" href="public/stylesheets/song-player.css"/>
+    <script src="public/javascripts/jquery-1.6.4.min.js" type="text/javascript"
+            charset="utf-8">
+    </script>
+
+<body>
+
+
+<div class="song-player clear-fix">
+    <div class="song-play pull-left">
+           <img id="audio_image" class="video-js vjs-default-skin"  src="http://d1qras9pgk1wz4.cloudfront.net/s3-1440410304115_thumb.jpg" width="462" height="462"/>
+        <audio id="audio" controls width="462" style="width: 462px;">
+            <source src="http://d1qras9pgk1wz4.cloudfront.net/s3-1442332503320.m4a" />
+        </audio>
+      <script type="text/javascript">
+          $(function(){
+              document.getElementById("audio").play();
+          });
+      </script>
+                <div class="song-info clear-fix">
+                    <img class="song-bg" src="http://d1qras9pgk1wz4.cloudfront.net/s3-1441652531711_thumb.jpg" width="56" height="56" alt=""/>
+                   
+            <p><span class="singer">
+           天佑亞倫 (火狐家族😘)  / 别找我麻烦</span><label for="">1243次播放</label></p>
+
+            <p class="song-introduce">喉嚨才好了一點就想唱歌了，哈哈!
+這次選了調皮輕快的歌，不知道適不適合我唱，心想就大膽嘗試吧～唱得不好，請勿見怪 😈😈😈</p>
+            <!--
+            <button type="button" class="share"></button>
+            <ul class="link-list">
+                <li class="first-link">
+                        <img src="public/images/Facebook-1.png" alt="" onclick="shareFaceBook();"/>
+                        <span>Facebook</span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="public/images/Twitter-1.png" alt=""/>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+            </ul>-->
+        </div>
+        <ul class="comment-list">
+
+        </ul>
+    </div>
+    <div class="links pull-left">
+        <img class="quick-mark" src="public/images/quickMark.png" alt=""/>
+
+        <p class="scan-quick-mark">请用手机扫一扫下载 iSing客户端</p>
+        <button class="android-play-download-btn" type="button"> <a  href="http://api.isingmobi.com/version/lastest" target="_blank"><img class="android-play-download"
+                                                                     src="public/images/Android-download1.png" alt=""></a>
+        </button>
+        <button class="google-play-download-btn" type="button"><a href="http://ad.apps.fm/UExaJxz6noifBxXajSoCO15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfMGrkomXlG7mIVHx1CD-bDC9Aa6u3X9iLFut_vO50C6tBL-PPEiD05bOVcxhp_I8s" target="_blank"><img class="google-play-download"
+                                                                    src="public/images/Googleplay-download1.png"
+                                                                    alt=""></a></button>
+        <ul class="share-list">
+            <li>
+                <a href="https://www.facebook.com/iSingApp">
+                    <img class="link-img" src="public/images/Facebook-1.png" alt=""/>
+                    Facebook
+                    <img class="arrow-right" src="public/images/arrow-right.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/iSing_Official">
+                    <img class="link-img" src="public/images/Twitter-1.png" alt=""/>
+                    Twitter
+                    <img class="arrow-right" src="public/images/arrow-right.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                    <img class="link-img" src="public/images/line.-1png" alt=""/>
+                     ising_official
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //轮播
+    var carousel_idx = 0;
+    var carousel_locals = [];
+
+    function shareFaceBook(){
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                console.log('Logged in.');
+            }
+            else {
+                FB.login();
+            }
+        });
+    }
+
+
+    function play() {
+        if (carousel_idx >= carousel_locals.length) {
+            carousel_idx = 0;
+        }
+
+        $("#audio_image").attr("src", carousel_locals[carousel_idx]);
+        carousel_idx++;
+        setTimeout("play()", 5000);
+    }
+
+    $(function() {
+        //console.info($(".share"));
+        $(document).click(function (event){
+            if ($(event.target)[0] == $('.share')[0]) {
+                $('.link-list').toggle();
+            } else {
+                $('.link-list').hide();
+            }
+        });
+
+        var page = 0;
+        var totalPage = 1;
+        var loading = false;
+
+        $(window).scroll(function () {
+            if ($(document).scrollTop() + $(window).height() >= $(document).height()) {
+                load();
+            }
+        });
+
+        function load() {
+            if (page > totalPage || loading) {
+                return;
+            }
+            page++;
+            loading = true;
+            $.ajax({
+                "url": 'user/song/comments',
+                dataType: 'json',
+                data: {
+                    userSongId: "201960",
+                    page: page,
+                    psize: 10
+                },
+                success: function (res) {
+                    try {
+                        if (res) {
+                            page = res.page;
+                            totalPage = res.totalPage;
+                            for (i in res.results) {
+                                var row = res.results[i];
+                                var heard = "<img src='" + row.user.headImg + "' alt='' />";
+                                var name = $("<h4></h4>").text(row.user.name);
+                                var content = $("<p></p>").text(row.content);
+                                var li = $("<li></li>");
+                                li.append(heard, name, content);
+                                $(".comment-list").append(li);
+                            }
+                        }
+                    } catch (e) {
+                        console.error(e);
+                    } finally {
+                        loading = false;
+                    }
+                },
+                error: function () {
+                    loading = false;
+                }
+            })
+        }
+
+
+        var ftype = "AUDIO";
+
+        if (ftype == "AUDIO") {
+                    carousel_locals.push("http://d1qras9pgk1wz4.cloudfront.net/s3-1440410304115_thumb.jpg");
+                                            carousel_locals.push("http://d1qras9pgk1wz4.cloudfront.net/s3-1440410304115_thumb.jpg");
+                                if (carousel_locals.length > 1) {
+                play();
+            }
+        }
+
+
+
+    });
+</script>

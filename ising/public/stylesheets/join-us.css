@@ -1,0 +1,97 @@
+/*-------------join-us start--------------*/
+.join-us .join-us-top {
+    background: url(img/primary-top.jpg);
+}
+.join-us .join-us-top .content {
+    width: 1000px;
+    height: 216px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.join-us .join-us-top .content .join-us-ising {
+     margin: 60px 0px 0px 55px;
+}
+
+.join-us .join-us-top .content .img-container {
+    position: relative;
+    left: 165px;
+    width: 263px;
+    height: 216px;
+}
+.join-us .join-us-top .content .img-container .join-us-quick-mark {
+    position: absolute;
+    z-index: 2;
+    top: 49px;
+    left: 55px;
+    width: 170px;
+    height: 170px;
+    -ms-animation: move-top 1s linear 0s 1;
+    -webkit-animation: move-top 1s linear 0s 1;
+    -moz-animation: move-top 1s linear 0s 1;
+    -o-animation: move-top 1s linear 0s 1;
+    animation: move-top 1s linear 0s 1;
+}
+.join-us .join-us-top .content .img-container .common-bg-sound {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 10px;
+    -ms-animation: bg-sound 1s linear 0s 1;
+    -webkit-animation: bg-sound 1s linear 0s 1;
+    -moz-animation: bg-sound 1s linear 0s 1;
+    -o-animation: bg-sound 1s linear 0s 1;
+    animation: bg-sound 1s linear 0s 1;
+}
+	/*-------------join-us end--------------*/
+
+/*-------------join-us-bottom start--------------*/
+.join-us .join-us-bottom .content{
+    width: 1000px;
+    margin: 0 auto;
+   
+
+}
+.join-us .join-us-bottom .content .join-us-title {
+   font-size: 24px;
+    color: #000;
+    margin: 53px 0px 0px 55px;
+    border-left: 4px solid #ed2445;
+    padding-left: 15px;
+	
+}
+.join-us .join-us-bottom .content .join-us-content {
+    padding: 32px 0px 0px 99px;
+}
+.join-us .join-us-bottom .content h4 {
+    font-size: 18px;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+.join-us .join-us-bottom .content p {
+    text-indent: 35px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.join-us .join-us-bottom .content h5 {
+    text-indent: 35px;
+    line-height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email {
+    margin: 86px 0px 50px 0px;
+    height: 48px;
+    padding-left: 78px;
+    background: url(img/email.png) no-repeat;
+    overflow: hidden;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email p {
+    margin: -3px 0px 9px 0px;
+    text-indent: 0px;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}

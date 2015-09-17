@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>首页</title>
+    <link rel="icon" href="public/images/is-sing.png" type="image/x-icon"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="Resource-type" content="Document"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="public/stylesheets/animation.css"/>
+    <link rel="stylesheet" href="public/stylesheets/header.css"/>
+    <link rel="stylesheet" href="public/stylesheets/primary.css"/>
+    <link rel="stylesheet" href="public/stylesheets/hot-song.css"/>
+    <link rel="stylesheet" href="public/stylesheets/join-us.css"/>
+    <link rel="stylesheet" href="public/stylesheets/about.css"/>
+    <link rel="stylesheet" href="public/stylesheets/update-log.css"/>
+</head>
+<body>
+<div class="bg">
+    <div class="header">
+        <div class="header-container">
+            <div class="header-content clear-fix">
+                <ul class="nav url-nav pull-left clear-fix">
+                    <li tag="index" >
+                        首页
+                        <div><a href="/">首页</a></div>
+                        <img src="public/images/tab.png" alt=""/>
+                    </li>
+                    <li data-url="hot-song" tag="hotsong"   >
+                        热门金曲
+                        <div><a href="songs.html">热门金曲</a></div>
+                        <img src="public/images/tab.png" alt=""/>
+                    </li>
+                    <li data-url="join-us" tag="joinus" >
+                        加入我们
+                        <div><a href="joinus.html">加入我们</a></div>
+                        <img src="public/images/tab.png" alt=""/>
+                    </li>
+                    <li data-url="update-log" tag="updatelog"  >
+                        更新日志
+                        <div><a href="version.html">更新日志</a></div>
+                        <img src="public/images/tab.png" alt=""/>
+                    </li>
+                    <li data-url="about" tag="about" >
+                        关于
+                        <div><a href="abouts.html">关于</a></div>
+                        <img src="public/images/tab.png" alt=""/>
+                    </li>
+                </ul>
+                <div class="language-toggle pull-right">
+                    <div class="current-language" style="color:#FFFFFF">中文</div>
+                    <img src="public/images/caret.png" alt=""/>
+                    <ul class="nav language-panel">
+                        <li style="color:#FFFFFF">中文</li>
+                        <li style="color:#FFFFFF">English</li>
+                        <li style="color:#FFFFFF">繁体中文</li>
+                        <li style="color:#FFFFFF">日文</li>
+                    </ul>
+                </div>
+                <ul class="nav share-nav pull-right clear-fix">
+                    <li title="Facebook"><a  href="https://www.facebook.com/iSingApp"><img src="public/images/facebook.png" alt=""/></a></li>
+                    <!-- <li title="Googleplay"><a href="#"><img src="public/images/Googleplay.png" alt=""/></a></li>-->
+                    <li title="Twitter"><a href="https://twitter.com/iSing_Official"><img src="public/images/Twitter.png" alt=""/></a></li>
+                    <!-- <li title="Instagram"><a href="#"><img src="public/images/Instagram.png" alt=""/></a></li>-->
+                    <!--  <li title="RSS"><a href="#"><img src="public/images/RSS.png" alt=""/></a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="public/javascripts/jquery-1.6.4.min.js" type="text/javascript"
+            charset="utf-8">
+    </script>
+    <div class="content">
+    <div class="primary contentShow">
+        <div class="primary-top">
+            <div class="content clear-fix">
+                <div class="content-left pull-left">
+                    <div class="is-sing">
+                        <img class="hot-song-ising pull-left" src="public/images/hot-song-ising.png" alt="">
+                    </div>
+                    <div class="download">
+                        <a  href="http://api.isingmobi.com/version/lastest" target="_blank"><img class="android-play-download" src="public/images/Android-download-hover.png" alt=""></a>
+                        <a href="http://ad.apps.fm/UExaJxz6noifBxXajSoCO15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfMGrkomXlG7mIVHx1CD-bDC9Aa6u3X9iLFut_vO50C6tBL-PPEiD05bOVcxhp_I8s" target="_blank">
+                            <img class="google-play-download" src="public/images/Googleplay-download-hover.png" alt=""></a>
+
+                        <div class="quickMark">
+                            <img src="public/images/quickMark.png" alt="">
+
+                            <p>用手机扫一扫下载 iSing客户端</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right pull-left">
+                    <img class="bg-sound" src="public/images/bg-sound.png" alt="">
+                    <img class="recently-release" src="public/images/recently-release.png" alt="">
+                    <img class="iSing-star" src="public/images/iSing-star.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="primary-bottom">
+            <div class="content">
+                <div class="song">
+                    <img class="song-img" src="public/images/song.png" alt=""
+                         style="visibility: visible; animation: song-img 1s linear 0s 1;">
+                    <img class="tip-img" src="public/images/tip-right.png" alt=""
+                         style="visibility: visible; animation: tip-right 2s linear 0s 1;">
+                    <img class="line" src="public/images/line.png" alt="">
+
+                    <div class="text" style="visibility: visible; animation: text-right 2.2s linear 0s 1;">
+                        <h4 class="song-list-title">一辈子都唱不完的曲库</h4>
+
+                        <p>支持英文、中文、泰语、葡语和日语</p>
+                    </div>
+                </div>
+                <div class="social-song">
+                    <div class="text" style="visibility: visible; animation: text-left 2.2s linear 0s 1;">
+                        <h4>完全免费的社交唱歌软件</h4>
+
+                        <p>沟通源自分享 唱歌交个朋友</p>
+                    </div>
+                    <img class="new-people-entry" src="public/images/new-people-entry.png" alt=""
+                         style="visibility: visible; animation: new-people-entry 1s linear 0s 1;">
+                    <img class="tip-img" src="public/images/tip-left.png" alt=""
+                         style="visibility: visible; animation: tip-left 2s linear 0s 1;">
+                    <img class="line" src="public/images/line.png" alt="">
+                </div>
+            </div>
+        </div>
+</div>
+    </div>
+</div>
+<div class="footer">
+    ©2014-2015 King Sing Interactive Entertainment Inc.
+</div>
+</body>
+<script src="public/javascripts/jquery-1.6.4.min.js" type="text/javascript"
+        charset="utf-8">
+</script>
+<script type="text/javascript">
+    $(function(){
+        var Primary = function () {};
+        Primary.prototype.initialize = function () {
+            this.downloadImgHover();
+            //this.animate();
+        };
+
+        Primary.prototype.downloadImgHover = function () {
+            $('.android-play-download').hover(
+                    function () {
+                        $(this).attr('src', 'public/images/Android-download.png');
+                    },
+                    function () {
+                        $(this).attr('src', 'public/images/Android-download-hover.png');
+                    }
+            );
+
+            $('.google-play-download').hover(
+                    function () {
+                        $(this).attr('src', 'public/images/Googleplay-download.png');
+                    },
+                    function () {
+                        $(this).attr('src', 'public/images/Googleplay-download-hover.png');
+                    }
+            );
+        };
+
+        var primaryObj = new Primary();
+        window.primaryObj = primaryObj;
+
+        primaryObj.initialize();
+    })
+
+</script>
+</html>

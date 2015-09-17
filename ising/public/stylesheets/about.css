@@ -1,0 +1,84 @@
+
+.about .about-top {
+    background: url(img/primary-top.jpg);
+}
+.about .about-top .content{
+    width: 1000px;
+    height: 216px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.about .about-top .content .about-ising {
+    margin: 60px 0px 0px 55px;
+}
+.about .about-top .content .img-container {
+ position: relative;
+    left: 165px;
+    width: 263px;
+    height: 216px;
+}
+.about .about-top .content .img-container .about-song-quick-mark {
+    position: absolute;
+    z-index: 2;
+    top: 49px;
+    left: 55px;
+    width: 170px;
+    height: 170px;
+    -ms-animation: move-top 1s linear 0s 1;
+    -webkit-animation: move-top 1s linear 0s 1;
+    -moz-animation: move-top 1s linear 0s 1;
+    -o-animation: move-top 1s linear 0s 1;
+    animation: move-top 1s linear 0s 1;
+}
+.about .about-top .content .img-container .common-bg-sound {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 10px;
+    -ms-animation: bg-sound 1s linear 0s 1;
+    -webkit-animation: bg-sound 1s linear 0s 1;
+    -moz-animation: bg-sound 1s linear 0s 1;
+    -o-animation: bg-sound 1s linear 0s 1;
+    animation: bg-sound 1s linear 0s 1;
+}
+
+.about .about-bottom {
+
+}
+.about .about-bottom .content{
+    width: 1000px;
+    margin: 0 auto;
+ 
+}
+.about .about-bottom .content .about-content {
+    padding-left: 58px;
+    height: auto;
+}
+.about .about-bottom .content h4 {
+    border-left: 4px solid #ed2455;
+    margin: 52px 0px 60px 0px;
+    padding-left: 15px;
+    font-size: 24px;
+    color: #000;
+}
+.about .about-bottom .content .about-content>p {
+    width: 850px;
+    line-height: 25px;
+    font-family: '宋体';
+    color: #000;
+    font-size: 14px;
+}
+.about .about-bottom .content .about-content .contact-email {
+    height: 743px;
+    padding-left: 61px;
+    margin-top: 98px;
+    background: url(img/about-email.png) no-repeat;
+    color: #000;
+    font-family: '黑体';
+    font-size: 18px;
+}
+.about .about-bottom .content .about-content .contact-email a {
+    text-decoration: none;
+    color: #000;
+}
+

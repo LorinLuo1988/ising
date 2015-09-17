@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video.js | HTML5 Video Player</title>
+  <meta charset="utf-8" />
+  <link href="video.css" rel="stylesheet" type="text/css">
+  <script src="video.dev.js"></script>
+
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+
+</head>
+<body>
+
+<!-- autoplay="autoplay" 自动播放 -->
+<!-- controls 播放控件显示-->
+<!-- preload 是否进入后加载 1.auto 2.none-->
+<!-- 去除字幕2  可在字幕文件加入双字幕 -->
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="1024" height="450" 
+      poster="http://video.wti0.com/1.0/1.jpg"
+      data-setup="{}">
+    <source src="http://video.wti0.com/1.0/a.mp4" type='video/mp4' />
+    <source src="http://video.wti0.com/1.0/a2.webm" type='video/webm' />
+    <!-- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
+
+    <track kind="captions" src="captions.vtt" srclang="ch" label="English"></track>
+  </video>
+
+</body>
+</html>

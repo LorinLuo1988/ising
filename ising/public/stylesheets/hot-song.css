@@ -1,0 +1,177 @@
+/*-------------hot-song-top start--------------*/
+.hot-song .hot-song-top {
+    background: url(img/primary-top.jpg);
+}
+.hot-song .hot-song-top .content {
+    width: 1000px;
+    height: 216px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hot-song .hot-song-top .content .hot-song-ising {
+    margin: 60px 0px 0px 55px;
+}
+.hot-song .hot-song-top .content .img-container {
+    position: relative;
+    left: 165px;
+    width: 263px;
+    height: 216px;
+}
+.hot-song .hot-song-top .content .img-container .hot-song-quick-mark {
+    position: absolute;
+    z-index: 2;
+    top: 49px;
+    left: 55px;
+    width: 170px;
+    height: 170px;
+    -ms-animation: move-top 1s linear 0s 1;
+    -webkit-animation: move-top 1s linear 0s 1;
+    -moz-animation: move-top 1s linear 0s 1;
+    -o-animation: move-top 1s linear 0s 1;
+    animation: move-top 1s linear 0s 1;
+}
+.hot-song .hot-song-top .content .img-container .common-bg-sound {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 10px;
+    -ms-animation: bg-sound 1s linear 0s 1;
+    -webkit-animation: bg-sound 1s linear 0s 1;
+    -moz-animation: bg-sound 1s linear 0s 1;
+    -o-animation: bg-sound 1s linear 0s 1;
+    animation: bg-sound 1s linear 0s 1;
+}
+
+/*-------------hot-song-top end--------------*/
+
+/*-------------hot-song-bottom start--------------*/
+.hot-song .hot-song-bottom {
+    background-color: #ffffff;
+}
+.hot-song .hot-song-bottom .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.hot-song .hot-song-bottom .content .song-list-title {
+    font-size: 24px;
+    color: #000;
+    margin: 53px 0px 0px 55px;
+    border-left: 4px solid #ed2445;
+    padding-left: 15px;
+
+}
+.hot-song .hot-song-bottom .content .song-list {
+    width: 890px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.hot-song .hot-song-bottom .content .song-list li {
+    float: left;
+    width: 262px;
+    height: 260px;
+    margin: 30px 22px 0px 0px;
+    background: url(img/primary-top.jpg);
+    cursor: pointer;
+}
+.hot-song .hot-song-bottom .content .song-list li.no-border-right {
+    margin-right: 0px;
+}
+.hot-song .hot-song-bottom .content .song-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hot-song .hot-song-bottom .content .song-list li a img.bgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.hot-song  .hot-song-bottom .content .song-list li a img.startImg {
+    position: absolute;
+    right: 16px;
+    bottom: 18px;
+    display: none;
+}
+.hot-song .hot-song-bottom .content .song-list li a:hover img.startImg {
+    display: block;
+}
+.hot-song .hot-song-bottom .content .pagination {
+    margin: 50px  0px 50px 308px;
+    list-style-type: none;
+    display: inline-block;
+    float: none;
+}
+.hot-song .hot-song-bottom .content .pagination:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.hot-song .hot-song-bottom .content .pagination li {
+    float: left;
+    padding: 12px;
+    border: 1px solid #e1e2e3;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.hot-song .hot-song-bottom .content .pagination li.active {
+    cursor: not-allowed;
+}
+.hot-song .hot-song-bottom .content .pagination li.active {
+    border:none;
+}
+.hot-song .hot-song-bottom .content .pagination li.active a {
+    color: #333;
+}
+.hot-song .hot-song-bottom .content .pagination li.inactive:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.next:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.prev:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.inactive:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li.prev:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li.next:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li a {
+    text-decoration: none;
+    color: #0000cc;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image.full {
+    display: block;
+    width: 100%;
+}
+.image {
+    position: relative;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+}
+.song-info {
+    text-align: center;
+}
+.song-info .singer {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.pagination{ margin-top:20px; float:right;margin-bottom: 20px;margin-right: 180px; }
+.pagination a{ float:left; padding:6px 12px; line-height:1.42; border:1px solid #ddd; margin-left:3px; display:inline}
+.pagination a.active{ background:#337ab7; color:#fff; border:1px solid #337ab7; }
+/*-------------hot-song-bottom end--------------*/

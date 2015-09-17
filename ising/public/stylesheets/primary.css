@@ -1,0 +1,195 @@
+.primary .primary-top {
+    background: url(img/primary-top.jpg);
+}
+.primary .primary-top .content {
+    width: 1000px;
+    height: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+.primary .primary-top .content .content-left {
+    position: absolute;
+    top: 72px;
+}
+.primary .primary-top .content .content-left .is-sing {
+    height: 102px;     
+    color: #fff;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+.primary .primary-top .content .content-left .is-sing h1 {
+    font-size: 25.45px;
+    margin: 50px 0px 0px 16px;
+}
+.primary .primary-top .content .content-left .is-sing p {
+    font-size: 14.14px;
+    line-height: 25px;
+    margin-left: 16px;
+}
+.primary .primary-top .content .content-left .download {
+    width: 285px;
+    margin-top: 80px;
+}
+.primary .primary-top .content .content-left .download .quickMark {
+    width: 217px;
+    height: 217px;
+    margin: 31px 0px 0px 33px;
+    background: #fff;
+}
+.primary .primary-top .content .content-left .download .quickMark img {
+    width:217px;
+    height:217px;
+	
+	
+}
+.primary .primary-top .content .content-left .download .quickMark p {
+    margin-top: 13px;
+    font: 12px '����';
+    text-align: justify;
+    white-space: pre-wrap;
+	color: #999999;
+	text-align: center;
+}
+.primary .primary-top .content .content-left .download .google-play-download {
+    margin-top: 18px;
+    width: 286px;
+    height: 57px;
+    cursor: pointer;
+}
+.primary .primary-top .content .content-left .download .android-play-download {
+    width: 286px;
+    height: 57px;
+    cursor: pointer;
+}
+.primary .primary-top .content .content-right {
+    width: 410px;
+    position: absolute;
+    top: 65px;
+    left: 358px;
+}
+.primary .primary-top .content .content-right .bg-sound {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -ms-animation: bg-sound 1.2s linear 0s 1;
+    -webkit-animation: bg-sound 1.2s linear 0s 1;
+    -moz-animation: bg-sound 1.2s linear 0s 1;
+    -o-animation: bg-sound 1.2s linear 0s 1;
+    animation: bg-sound 1.2s linear 0s 1;
+}
+.primary .primary-top .content .content-right .recently-release {
+    position: absolute;
+    top: 190px;
+    left: 55px;
+    animation: recently-release 1s linear 0s 1;
+    -ms-animation: recently-release 1s linear 0s 1;
+    -webkit-animation: recently-release 1s linear 0s 1;
+    -moz-animation: recently-release 14s linear 0s 1;
+    -o-animation: recently-release 1s linear 0s 1;
+}
+.primary .primary-top .content .content-right .iSing-star {
+    position: absolute;
+    top: 80px;
+    left: 185px;
+    animation: iSing-star 1s linear 0s 1;
+    -ms-animation: iSing-star 1s linear 0s 1;
+    -webkit-animation: iSing-star 1s linear 0s 1;
+    -moz-animation: iSing-star 1s linear 0s 1;
+    -o-animation: iSing-star 1s linear 0s 1;
+}
+
+.primary .primary-bottom {
+    background: #fff;
+}
+.primary .primary-bottom .content {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.primary .primary-bottom .content .song {
+    height: 394px;
+    margin-top: 140px;
+    margin-left: 59px;
+    position: relative;
+}
+.primary .primary-bottom .content .song .song-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+.primary .primary-bottom .content .song .tip-img {
+    position: absolute;
+    top: 210px;
+    left: 365px;
+    visibility: hidden;
+}
+.primary .primary-bottom .content .song .line {
+    position: absolute;
+    top: 394px;
+    left: -88.5px;
+}
+.primary .primary-bottom .content .song .text {
+    position: absolute;
+    top: 173px;
+    left: 490px;
+    visibility: hidden;
+}
+.primary .primary-bottom .content .song .text h4 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+	
+}
+.primary .primary-bottom .content .song .text p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #999;
+	
+	
+}
+.primary .primary-bottom .content .social-song {
+    height: 480px;
+    position: relative;
+    margin-top: 67px;
+    overflow: hidden;
+}
+.primary .primary-bottom .content .social-song .text {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    visibility: hidden;
+	
+}
+.primary .primary-bottom .content .social-song .tip-img{
+    position: absolute;
+    top: 310px;
+    right: 510px;
+    width: 105px;
+    height: 9px;
+    visibility: hidden;
+}
+.primary .primary-bottom .content .social-song .text h4 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+
+}
+.primary .primary-bottom .content .social-song .text p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+}
+.primary .primary-bottom .content .social-song .new-people-entry {
+    position: absolute;
+    top: 0px;
+    left: 549px;
+    visibility: hidden;
+}
+.primary .primary-bottom .content .social-song .line {
+    position: absolute;
+    top: 472px;
+    left: 448px;
+}
