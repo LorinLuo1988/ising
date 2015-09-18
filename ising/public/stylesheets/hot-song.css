@@ -68,9 +68,9 @@
 .hot-song .hot-song-bottom .content .song-list li {
     float: left;
     width: 262px;
-    height: 260px;
+    /*height: 260px;*/
     margin: 30px 22px 0px 0px;
-    background: url(img/primary-top.jpg);
+    /*background: url(img/primary-top.jpg);*/
     cursor: pointer;
 }
 .hot-song .hot-song-bottom .content .song-list li.no-border-right {
@@ -79,7 +79,7 @@
 .hot-song .hot-song-bottom .content .song-list li a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 262px;
     position: relative;
 }
 .hot-song .hot-song-bottom .content .song-list li a img.bgImg {
@@ -166,10 +166,22 @@
 }
 .song-info {
     text-align: center;
+	margin-top: 10px;
 }
 .song-info .singer {
-    font-size: 16px;
+	height: 25px;
+	line-height: 25px;
+    font-size: 22px;
     margin-right: 5px;
+	color: #999999;
+	overflow: hidden;
+}
+.song-info .song-name {
+	height: 25px;
+	line-height: 25px;
+	font: 18px MicrosoftYaHei;
+	color: #333333;
+	overflow: hidden;
 }
 .pagination{ margin-top:20px; float:right;margin-bottom: 20px;margin-right: 180px; }
 .pagination a{ float:left; padding:6px 12px; line-height:1.42; border:1px solid #ddd; margin-left:3px; display:inline}

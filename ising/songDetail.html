@@ -21,7 +21,7 @@
 
 <div class="song-player clear-fix">
     <div class="song-play pull-left">
-           <img id="audio_image" class="video-js vjs-default-skin"  src="http://d1qras9pgk1wz4.cloudfront.net/s3-1440410304115_thumb.jpg" width="462" height="462"/>
+           <img id="audio_image" class="video-js vjs-default-skin"  src="http://d1qras9pgk1wz4.cloudfront.net/s3-1440410304115_thumb.jpg" width="462" height="480"/>
         <audio id="audio" controls width="462" style="width: 462px;">
             <source src="http://d1qras9pgk1wz4.cloudfront.net/s3-1442332503320.m4a" />
         </audio>
@@ -30,14 +30,20 @@
               document.getElementById("audio").play();
           });
       </script>
-                <div class="song-info clear-fix">
-                    <img class="song-bg" src="http://d1qras9pgk1wz4.cloudfront.net/s3-1441652531711_thumb.jpg" width="56" height="56" alt=""/>
-                   
-            <p><span class="singer">
-           天佑亞倫 (火狐家族😘)  / 别找我麻烦</span><label for="">1243次播放</label></p>
+         <div class="song-info clear-fix">
+            <img class="song-bg" src="http://d1qras9pgk1wz4.cloudfront.net/s3-1441652531711_thumb.jpg" width="56" height="56" alt=""/>
+            <p class="clear-fix">
+				<span class="singer" style="float:left;width: 250px;overflow: hidden;">容易受伤的女人</span>
+				<label for="" style="float: right;">1243次播放</label>
+				<span>WSDSV</span>
+				<img style="margin-left: 5px;" src="public/stylesheets/img/woman.png" alt=""/>
+			</p>
 
-            <p class="song-introduce">喉嚨才好了一點就想唱歌了，哈哈!
-這次選了調皮輕快的歌，不知道適不適合我唱，心想就大膽嘗試吧～唱得不好，請勿見怪 😈😈😈</p>
+            <p class="song-introduce">
+				<span>
+					喉嚨才好了一點就想唱歌了，哈哈!這次選了調皮輕快的歌，不知道適不適合我唱，心想就大膽嘗試吧～唱得不好，請勿見怪
+				</span>
+			</p>
             <!--
             <button type="button" class="share"></button>
             <ul class="link-list">
